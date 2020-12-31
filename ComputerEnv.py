@@ -25,7 +25,7 @@ class Computer:
         #hyperparameters for tuning
         #controls the learning process, other parameters derived through training
         #number of runs
-        self.num_iterations = 48000
+        self.num_iterations = 14000
         #initial amount of data collections, seems to boost learning a lot
         self.initial_collect_steps = 1000
         #every run we collect this number of times
@@ -35,10 +35,10 @@ class Computer:
 
         self.batch_size = 64
         self.learning_rate = 1e-3
-        self.log_interval = 1000
+        self.log_interval = 500
 
         self.num_eval_episodes = 5
-        self.eval_interval = 4000
+        self.eval_interval = 2000
 
     def train_eval(self):
         training_env = RLSnake.RLSnake()

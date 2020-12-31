@@ -3,13 +3,13 @@ import ComputerSnakeGUI
 import pygame
 
 def input_data_to_GUI():
-    start_game = 19
+    start_game = 36
     game = ComputerSnakeGUI.ComputerSnake()
     #list of lists where each list is an individual games set of moves
     moves = pickle_obj[0]
     fruit = pickle_obj[1]
     #end_game = len(moves)
-    end_game = 20
+    end_game = 37
 
     pygame.time.set_timer(pygame.USEREVENT+2,200)
     index = 0
